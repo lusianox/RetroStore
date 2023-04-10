@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#bla" />
+    <title>Comprar</title>
+    <link rel="icon" href="./img/Icono.png">
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"/>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+      <link rel="stylesheet" href="style/style.css"/>
+    </head>
+  <body>
+
+   <!-- Barra de navegación -->
+   <nav class="navbar navbar-expand-lg bg-dark sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand"><img src="img/Icono.png" id="logo" alt="Icono de la barra de busqueda" width="100" height="50"></a>
+      <a class="navbar-brand text-white" href="index.html">RetroStore</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="sucursales.html">Sucursales</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="sobrenosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="index.php">Contacto</a>
+          </li>
+        </ul>
+        <a class="navbar-brand"><img src="video/pikachu.gif" id="logo" alt="Icono de la barra de busqueda" width="70" height="50"></a>
+      </div>
+    </div>
+  </nav>
+
+     <!--Título y subtítulo-->
+     <h1>Retro Store</h1>
+     <h2>La tienda de accesorios más estrafalaria del país</h2>
+
+    <header class="container-fluid position-sticky top-0">
+      <ul class="nav nav-pills mb-3 px-5 container" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false">Ver productos</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false">Ver carrito</a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+      Producto añadido correctamente
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Decidite hijo de puta!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab">1</div>
+
+      <div class="tab-pane fade show active container" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Collar de perlas</h5>
+              <img src="img/collarperlas2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$600</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Aros de perla</h5>
+              <img src="img/arosperlas2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$250</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Gafas retro</h5>
+              <img src="img/gafasretro.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$1500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Peluca afro disco</h5>
+              <img src="img/pelucaretro2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$2300</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Argollas</h5>
+              <img src="img/argollas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$300</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Bandanas</h5>
+              <img src="img/bandanas.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$500</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Medias Back to the Future</h5>
+              <img src="img/mediasvolveralfuturo.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$800</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 rounded" style="width: 20rem;">
+              <h5 class="card-title pt-2 text-center text-dark">Llaveros gamer</h5>
+              <img src="img/llaverosretro.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="text-primary">Precio: <span class="precio">$200</span></h5>
+                <div class="d-grid gap-2">
+                <button  class="btn btn-primary button">Añadir al carrito</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab">
+      <br>
+      <table class="table table-dark table-hover">
+        <thead>
+          <tr class="text-primary">
+            <th scope="col">🛒</th>
+            <th scope="col">Productos</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Cantidad</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+        </tbody>
+      </table>
+
+      <div class="row mx-4">
+        <div class="col">
+          <h3 class="itemCartTotal text-white" id="precioFinal">Total: 0</h3>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <button onclick="enviar()" class="btn btn-success">COMPRAR</button>
+        </div>
+      </div>
+      </div>
+    </div>
+
+            	<!--Footer-->
+              <div class="footer">
+                <div class="container-fluid">
+                  <div class="row pb-2 bg-dark text-white py-5">
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                      <p class="h2 text-decoration-none">Retro Store</p>
+                      <p class="text-secondary">Buenos Aires, Argentina.</p>
+                    </div>
+            
+                    <div class="col-xs-12 col-md-6 col-lg-3">
+                      <p class="h4">Contáctanos</p>
+                      
+                      <div class="mb-1">
+                        <a class="text-secondary text-decoration-none" href="https://www.facebook.com/people/Luciano-Bucher/100016990541547/"><img src="./img/Iconos redes sociales/Facebook.png" alt="Icono Facebook footer" class="iconoFacebook"></a> 
+                        <a class="text-secondary text-decoration-none" href="https://www.instagram.com/lucianobucher"><img src="./img/Iconos redes sociales/Instagram.png" alt="Icono Instagram footer" class="iconoInstagram"></a>
+                        <a class="text-secondary text-decoration-none" href="https://wa.me/5491158902395"><img src="./img/Iconos redes sociales/WhatsApp.png" alt="Icono WhatsApp footer" class="iconoWhatsApp"></a>
+                      </div>
+                      
+                      </div>
+                      <div class="col-xs-12 col-md-6 col-lg-3">
+                        <p class="h4">Envíanos un comentario</p>
+                        <form method="post">
+                          <input type="text" placeholder="Mensaje..." name="mensajito">
+                          <input type="submit" name="botoncitoMensaje">
+                        </form>
+                    </div>
+            
+                    <div class="col-xs-12 pt-4">
+                      <p class="text-white text-center">Copyright - All rights reserved CC 2022</p>
+                    </div>
+                  </div>
+                </div>	
+               </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"></script>
+    <script src="caca.js"></script>
+  </body>
+</html>

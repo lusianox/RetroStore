@@ -1,0 +1,104 @@
+body{
+    background-color: #222; 
+    background-image: url(../img/Fondos/productos.jpg);
+    background-attachment: fixed;
+}
+
+a{
+    font-family: century gothic;
+	text-align: center;
+}
+
+header, .alert{
+    z-index: 100;
+    text-align: center;
+}
+
+@font-face{
+    font-family: vhs;
+    src: url(../letravhs.ttf);
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 100;
+    z-index: 100;
+    color: rgb(255, 238, 0);
+    margin-bottom: 30px;
+    font-family: vhs;
+    text-align: center;
+}
+h2{
+    color: rgb(255, 238, 0);
+    font-family: vhs;
+    text-align: center;
+}
+
+
+.iconoFacebook{
+    width: 40px;
+}
+
+.iconoInstagram, .iconoWhatsApp{
+    width: 40px;
+    margin-left: 10px;
+
+}
+
+.footer{
+    font-family: century gothic;
+	text-align: center;
+}
+  .description{
+    height: 25px;
+    overflow: hidden;
+    transition: height .3s ease-in .3s;
+}
+
+.carrito{
+    min-height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.table__productos{
+    display: flex;
+}
+
+.table__productos > img{
+    width: 9rem;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-right: 20px;
+}
+
+.table__cantidad > input{
+    width: 40px;
+    border: none;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+.hide, .remove{
+    display: none;
+}
+
+input{
+	width: calc(100% - 20px);
+	padding: 9px;
+	margin: auto;
+	margin-top: 12px;
+	font-size: 16px
+}
+input[type='submit']{
+	background-color: rgb(98, 214, 243);
+	color: #fff;
+	width: calc(80% - 20px);
+	margin: 0 10%;
+	margin-top: 22px;
+	border: none;
+}
